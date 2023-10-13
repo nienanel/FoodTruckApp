@@ -13,8 +13,7 @@ const Sidebar = (props) => {
     const {showSideBar} = props;
 
     return (
-        <div className={`bg-[#0e1111] fixed lg:left-0 top-0 w-28 h-full flex flex-col justify-between rounded-tl-xl rounded-br-xl z-50 transition-all ${showSideBar ? "left-0" : "-left-full"}`}
-        >
+        <div className={`bg-[#0e1111] fixed lg:left-0  top-0 w-28 h-full flex flex-col justify-between rounded-tl-xl rounded-br-xl z-50 transition-all ${showSideBar ? "left-0" : "-left-full"}`}>
             <ul className="pl-4 space-y-5">
                 <Link to="/" className="brand"><img src={logo} alt="" className="w-full mt-10 mb-10 " /></Link>
                 <li className="bg-[#414a4c] p-4 rounded-tl-xl rounded-bl-xl"><Link to="/" className="text-[#ec7c6a] p-4 flex justify-center w-full bg-[#ec7c6a]rounded-xl">
